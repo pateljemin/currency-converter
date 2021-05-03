@@ -15,7 +15,6 @@ export const getAllRates = async () => {
     }
 };
 
-
 /**
  * Return the currency conversation.
  * @param from : From Symbol

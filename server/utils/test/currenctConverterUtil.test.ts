@@ -6,7 +6,7 @@ describe('Currency Util Test Suit', () => {
             HKD: 100,
             INR: 100,
             USD: 80
-        }, 'INR', 'USD')).toEqual("0.800");
+        }, 'INR', 'USD')).toEqual('0.800');
         expect(Util.getActualRate({
             HKD: 100,
             INR: 90,
@@ -15,6 +15,6 @@ describe('Currency Util Test Suit', () => {
     });
 
     it('Reverse rate', () => {
-        expect(Util.getReverseRate(5)).toEqual("0.200");
+        expect(Util.getReverseRate(5)).toEqual('0.200');
     });
 });

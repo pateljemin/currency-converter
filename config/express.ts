@@ -52,7 +52,7 @@ class Express {
          * Installing subscription handlers
          */
         this.server.installSubscriptionHandlers(this.httpServer);
-    };
+    }
 
     /**
      * Should be called upon server start up
@@ -62,7 +62,7 @@ class Express {
     public initCache = (interval): void => {
         populateDefaultCurrencyRate();
         this.interval = setInterval(populateDefaultCurrencyRate, interval);
-    };
+    }
 
     /**
      * Should be called on server shutdown
